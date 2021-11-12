@@ -50,13 +50,10 @@
       
     
   <modules>
-            
-    <module>../../COM528-gitrepo/solent2Public/session3/creditcardtest/creditcardchecker-answer/card-checker</module>
-            
-    <module>../../COM528-gitrepo/solent2Public/bank-simulator/standalone-bankclient/client</module>
           
     <module>web-ui</module>
-      
+    <module>card-checker</module>
+    <module>client</module>
   </modules>
       
     
