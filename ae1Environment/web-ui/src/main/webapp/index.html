@@ -22,57 +22,25 @@
                             <li>Refund a transaction</li>
                         </ul>
                 </div>
+                
                 <!<!-- buttons for interaction -->
                 <div class="row justify-content-around align-items-center">
-                    <button type="button" class="btn btn-dark col-sm-2">Admin Login</button>
-                    <button href="#creditcarddetails" type="button" class="btn btn-dark col-sm-2" data-toggle="collapse">New Transaction</button>
-                    <button type="button" class="btn btn-dark col-sm-2">Refund Transaction</button>
+                    <a>
+                        <button type="button" class="btn btn-dark col-12 ">Admin Login</button>
+                    </a>
                     <p></p>
+                    <a href="newtransaction.html">
+                        <button type="button" class="btn btn-dark col-12">New Transaction</button>
+                    </a>
+                    <p></p>
+                    <a href="refundpage.html">
+                        <button type="button" class="btn btn-dark col-12">Refund Transaction</button>
+                    </a>
+                    <p> </p>
                 </div>
-                
-                <!<!-- hidden card details -->
-                <form class = ""action="" id="creditcarddetails">
-                    <div class="d-flex align-items-centre flex-column col-sm-3">
-                        <label for="card-name">Name on card:</label><br>
-                        <input type="text" id="nameOnCard" name="nameOnCard"><br>
-                        <label for="expirydate">Expiry Date:</label><br>
-                        <input type="month" id="expirydate" name="expirydate"><br>
-                        <label for="cvv">CVV</label><br>
-                        <input type="number" id="cvv" name="cvv">
-                    </div>
-                    <div class="ml-4 justify-content-centre" id="pinpad"> 
-                        <div class="col-12 d-flex justify-content-center">
-                            <input type="text" class="text-center" id="cardnumber">
-                        </div>
-                        <div id="numpad" class=" d-flex justify-content-center row align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '1';">1</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '2';">2</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '3';">3</button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '4';">4</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '5';">5</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '6';">6</button><br>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '7';">7 </button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '8';">8</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '9';">9</button><br>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-warning" class="btn btn-outline-secondary py-3" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value.slice(0, -1);">&lt;</button>
-                                <button type="button" class="btn" onclick="document.getElementById('cardnumber').value=document.getElementById('cardnumber').value + '0';">0</button>
-                                <button type="button" class="btn btn-danger" onclick="">X</button><br>
-                            </div>
-                            <button type="submit" class="btn btn-success col-12 d-flex justify-content-center" value="submit">Enter</button>
-                        </div>
-                        <button class="btn btn-secondry">
-                            <span class="spinner-border spinner-border-sm"></span>
-                            Waiting for confirmation....
-                        </button>
-                    </div>
-                </form>
+            </div>
+            <div>
+                <button onclick="goBack()">Go Back</button>
             </div>
         </div>
         
