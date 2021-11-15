@@ -11,36 +11,19 @@
         <div class ="container-fluid bg-dark">
         <!<!-- header -->
             <div class ="container-fluid bg-light text-center">
-                <h1>Welcome to the Homepage!</h1>
+                <h1>Log in</h1>
             </div> 
             <div class = "container bg-light">
-                <div class="col justify-content-centre align-items-center">
-                    <p>This is the main page where you can do the following tasks:</p>
-                        <ul>
-                            <li>Login</li>
-                            <li>Create a new transaction</li>
-                            <li>Refund a transaction</li>
-                        </ul>
+                <div class="row justify-content-centre align-items-center">
+                    <p>Welcome to the login page</p>
+                    <form id="login">
+                        <label for="name">username</label>
+                        <input type="text" placeholder="enter username" name="name" required>
+                        <label>password</label>
+                        <input type="text" placeholder="enter password" name="password" required>
+                        <button type="submit">Login</button>
+                    </form>
                 </div>
-                
-                <!<!-- buttons for interaction -->
-                <div class="row justify-content-around align-items-center">
-                    <a>
-                        <button type="button" class="btn btn-dark col-12 ">Admin Login</button>
-                    </a>
-                    <p></p>
-                    <a href="newtransaction.html">
-                        <button type="button" class="btn btn-dark col-12">New Transaction</button>
-                    </a>
-                    <p></p>
-                    <a href="refundpage.html">
-                        <button type="button" class="btn btn-dark col-12">Refund Transaction</button>
-                    </a>
-                    <p> </p>
-                </div>
-            </div>
-            <div>
-                <button onclick="goBack()">Go Back</button>
             </div>
         </div>
         
