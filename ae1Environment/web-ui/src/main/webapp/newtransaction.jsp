@@ -1,3 +1,11 @@
+<%-- 
+    Document   : newtransaction
+    Created on : 15 Nov 2021, 03:17:27
+    Author     : hannah-ann
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -5,7 +13,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>Refund</title>
+        <title>Credit Card Application - New Transaction</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!<!-- CSS for bootstrap -->
@@ -16,26 +24,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <div class ="container-fluid bg-dark">
         <!<!-- header -->
             <div class ="container-fluid bg-light text-center">
-                <h1>Refund Request</h1>
+                <h1>New Transaction</h1>
             </div> 
             <div class = "container bg-light">
                 <div class="col justify-content-centre align-items-center">
                     <!<!-- hidden card details -->
-                <form class = ""action="" id="creditcarddetails">
-                    <p>
-                        Please enter the card details from the card you would like the refund to be from below: <br>
-                    </p>
+                <form id="creditcarddetails">
                     <div class="d-flex align-items-centre flex-column col-sm-3">
                         <label for="card-name">Name on card:</label><br>
                         <input type="text" id="nameOnCard" name="nameOnCard"><br>
                         <label for="expirydate">Expiry Date:</label><br>
                         <input type="month" id="expirydate" name="expirydate"><br>
-                        <label for="cvv">CVV:</label><br>
+                        <label for="cvv">CVV</label><br>
                         <input type="number" id="cvv" name="cvv">
                     </div>
                     <div class="ml-4 justify-content-centre" id="pinpad"> 
                         <div class="col-12 d-flex justify-content-center">
-                            <label for="card-number">Card Number:</label><br>
                             <input type="text" class="text-center" id="cardnumber">
                         </div>
                         <div id="numpad" class=" d-flex justify-content-center row align-items-center">
@@ -61,26 +65,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                             </div>
                             <button type="submit" class="btn btn-success col-12 d-flex justify-content-center" value="submit">Enter</button>
                         </div>
-                        <button class="btn btn-secondry">
+                        <!-- edit this for loading when the submit button is pressed and confirmed -->
+                        <!-- <button class="btn btn-secondry">
                             <span class="spinner-border spinner-border-sm"></span>
                             Waiting for confirmation....
-                        </button>
-                        <div>
-                            <button onclick="goBack()">Go Back</button>
-                        </div>
+                        </button> -->       
                     </div>
                 </form>
                 </div>
+            </div>
+            <div>
+                <button onclick="goBack()">Go Back</button>
             </div>
         </div>
         <!<!-- Javascript to bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script>
-            function goBack() {
-              window.history.back();
-            }
-        </script>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
     </body>
 </html>
 
