@@ -3,6 +3,12 @@
     Created on : 15 Nov 2021, 22:28:24
     Author     : dagbo
 --%>
+<%@page import="java.io.IOException"%>
+<%@page import="java.nio.file.StandardOpenOption"%>
+<%@page import="java.nio.file.Paths"%>
+<%@page import="java.nio.file.Files"%>
+<%@page import="java.util.function.Function"%>
+
 <%@page import= "java.nio.file.Files"%>
 <%@page import= "java.util.function.Function"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -37,7 +43,7 @@
 
         session.setAttribute("sessionUser", user);
         session.setAttribute("sessionPassword", password);
-        System.out.println("METEMOS USER Y PASS EN SESION");
+        System.out.println("logging in user and pass");
         System.out.println((String) session.getAttribute("sessionUser"));
         System.out.println((String) session.getAttribute("sessionPassword"));
     }
