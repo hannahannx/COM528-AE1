@@ -1,2 +1,15 @@
-# COM528-AE1
-This will be our GitHub repository where we jointly develop code and documentation for our AE1 assignment at university
+# Web based point of sales application
+## Our Task
+
+# Project Plan
+## Task Assignment
+
+# Use Cases
+
+# List of features
+
+# Test Plan
+
+# UML Class Diagram
+
+# UML Robustness Diagram
