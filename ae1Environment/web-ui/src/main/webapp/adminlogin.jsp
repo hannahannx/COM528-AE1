@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page  %>
+<%@page import = "org.property" %>
 <!<!-- jsp goes here -->
 
 <!DOCTYPE html>
