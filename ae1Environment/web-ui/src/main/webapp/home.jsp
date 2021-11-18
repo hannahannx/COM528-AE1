@@ -37,7 +37,7 @@
                         <button type="button" class="btn btn-dark col-12 ">Admin Login</button>
                     </a>
                     <p></p>
-                    <a href="transact.jsp">
+                    <a href="newtransaction.jsp">
                         <button type="button" class="btn btn-dark col-12">New Transaction</button>
                     </a>
                     <p></p>
