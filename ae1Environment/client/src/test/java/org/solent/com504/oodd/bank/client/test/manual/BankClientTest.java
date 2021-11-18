@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.solent.com504.oodd.bank.client.test.manual;
+package org.solent.ood.bank.client.test.manual;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
-import org.solent.com504.oodd.bank.client.impl.BankRestClientImpl;
-import org.solent.com504.oodd.bank.model.client.BankRestClient;
-import org.solent.com504.oodd.bank.model.dto.BankTransactionStatus;
-import org.solent.com504.oodd.bank.model.dto.CreditCard;
-import org.solent.com504.oodd.bank.model.dto.TransactionReplyMessage;
+import org.solent.ood.bank.client.impl.BankRestClientImpl;
+import org.solent.ood.bank.model.client.BankRestClient;
+import org.solent.ood.bank.model.dto.BankTransactionStatus;
+import org.solent.ood.bank.model.dto.CreditCard;
+import org.solent.ood.bank.model.dto.TransactionReplyMessage;
 
 /**
  *
@@ -24,8 +24,7 @@ public class BankClientTest {
 
     final static Logger LOG = LogManager.getLogger(BankClientTest.class);
 
-    //String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/bank/rest";
-    String bankUrl = "http://localhost:8080/bank/rest";
+    String bankUrl = "http://localhost:8080/bank/rest ";
     CreditCard fromCard = null;
     CreditCard toCard = null;
     
@@ -57,7 +56,7 @@ public class BankClientTest {
 
         BankRestClient client = new BankRestClientImpl(bankUrl);
 
-        Double amount = 0.0;
+        Double amount = 50.0;
 
         TransactionReplyMessage reply = client.transferMoney(fromCard, toCard, amount);
         LOG.debug("transaction reply:" + reply);

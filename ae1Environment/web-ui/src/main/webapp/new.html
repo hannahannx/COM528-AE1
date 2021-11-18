@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<%-- 
+    Document   : transaction
+    Created on : 15 Nov 2021, 22:28:24
+    Author     : dagbo
+--%>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>POS</title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+        <span class="navbar-brand">new transactions</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                   <hr>
+                           <form action="./transaction.jsp" method="post">
+                            <div class="row">
+                                <div>
+                                    <input type="hidden" class="form-control" name="action" value="logout">
+                                    <button class="btn btn-lg btn-block btn btn-dark mt-4" type="submit">
+                                        Log out
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <hr>
+
+            </ul>
+        </div>
+    </nav> 
+    
+   
+       <div class="row card-body align-items-center justify-content-center ">
+            <div class="col-sm-10">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h1 class="card-title">Begin transactions</h1>
+                        
+                        <div  class="alert alert-success" role="alert">
+                            <a class="close" data-dismiss="alert" href="#">×</a>Refund successful
+                        </div>
+                      
+
+                     
+
+
+                        <form action="./transaction.jsp" method="post">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>From Card</h3>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Name</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="name1" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>End Date</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="endDate1" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Card Number</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="cardnumber1" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>CVV</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="cvv1" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Issuer Number</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="issueNumber1" value="">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <h3>To Card</h3>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Name</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="name2" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>End Date</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="endDate2" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Card Number</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="cardnumber2" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>CVV</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="cvv2" value="">
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="label-container">
+                                            <label>Issuer Number</label>
+                                        </div>
+                                        <input type="text" class="form-control" name="issueNumber2" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-5 pb-5 mb-5 ">
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <h3>Amount</h3>
+                                        <input type="number" class="form-control" name="amount" value="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <input type="hidden" name="action" value="transaction">
+                            <button type="submit" class="btn btn-primary">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+  
+    </body>
+</html>
