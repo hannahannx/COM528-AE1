@@ -29,7 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <div class = "container bg-light">
                 <div class="col justify-content-centre align-items-center">
                     <!<!-- hidden card details -->
-                <form id="creditcarddetails">
+                <form id="creditcarddetails" action = "transaction.jsp">
                     <div class="d-flex align-items-centre flex-column col-sm-3">
                         <label for="card-name">Name on card:</label><br>
                         <input type="text" id="nameOnCard" name="nameOnCard"><br>

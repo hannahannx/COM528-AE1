@@ -26,7 +26,7 @@
             <div class = "container bg-light">
                 <div class="row justify-content-centre align-items-center">
                     <p>Welcome to the login page</p>
-                    <form id="login">
+                    <form id="login" >
                         <label for="name">username</label>
                         <input type="text" placeholder="enter username" name="name" required>
                         <label>password</label>
