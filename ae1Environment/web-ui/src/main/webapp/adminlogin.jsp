@@ -4,10 +4,32 @@
     Author     : hannah-ann
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import = "org.property" %>
-<!<!-- jsp goes here -->
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page import= "properties.WebObjectFactory"%>
+<%@page import= "properties.PropertiesDao"%>
+
+<%
+    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
+ 
+    String username = propertiesDao.getProperty("username");
+    String password = propertiesDao.getProperty("password");
+    String message = "";
+    
+    String action = (String) request.getParameter("action");
+    if ("updateProperties".equals(action)) {
+        message = "updating properties";
+      
+        username = (String) request.getParameter("username");
+        password = (String) request.getParameter("password");
+      
+        propertiesDao.setProperty("username", username);
+        propertiesDao.setProperty("password", password);
+    }
+    
+    
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,11 +48,14 @@
             <div class = "container bg-light">
                 <div class="row justify-content-centre align-items-center">
                     <p>Welcome to the login page</p>
-                    <form id="login">
-                        <label for="name">username</label>
-                        <input type="text" placeholder="enter username" name="name" required>
+                    <%=message  %>
+                    <form id="login" action = "adminlogin.jsp">
+                        <label for="username">username</label>
+                        <input type="text" placeholder="enter username" name="username" value="<%=username%>" required>
                         <label>password</label>
-                        <input type="text" placeholder="enter password" name="password" required>
+                        <input type="text" placeholder="enter password" name="password" value="<%= password %>" required>
+                        
+                        <input type="hidden" name="action" value="updateProperties">
                         <button type="submit">Login</button>
                     </form>
                 </div>
