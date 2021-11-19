@@ -51,9 +51,9 @@
     
   <modules>
           
+    <module>client</module>
     <module>web-ui</module>
     <module>card-checker</module>
-    <module>client</module>
   </modules>
       
     
