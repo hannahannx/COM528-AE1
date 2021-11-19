@@ -4,6 +4,7 @@
 ## Our Task
 In this application we will create a web based point of sale application which allows users to enter thier credit card details in order to create a transaction. It should also have the option to refund a transaction, given that the admin accepts the transaction. 
 
+
 # Project Plan
 ## Task Assignment
 All members of our group were given specific tasks to complete such as web design and implemenation.
@@ -19,6 +20,10 @@ All members of our group were given specific tasks to complete such as web desig
 | Test Plan                               | 
 
 Further detail of the implementation and issue are noted in the project section on this repositary.
+
+
+# How to use our app
+- here explain how to run the files
 
 # Use Cases
 
