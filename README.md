@@ -1,5 +1,5 @@
-<img width="651" alt="use case" src="https://user-images.githubusercontent.com/37887398/142621014-9b0cd1a5-d67e-4644-94bf-df69db07673e.png">
-<img width="506" alt="Robustness diagram" src="https://user-images.githubusercontent.com/37887398/142621018-5a6e27b8-d16d-46dd-bd07-223f6607c952.png">
+
+
 # Web based point of sales application
 ## Our Task
 In this application we will create a web based point of sale application which allows users to enter thier credit card details in order to create a transaction. It should also have the option to refund a transaction, given that the admin accepts the transaction. 
@@ -24,8 +24,9 @@ Further detail of the implementation and issue are noted in the project section 
 
 "A use case diagram is a model of requirements of a system at a high level" Unhelkar, B. (2017)
 
-
 Below is our use case diagram
+
+<img width="651" alt="use case" src="https://user-images.githubusercontent.com/37887398/142621014-9b0cd1a5-d67e-4644-94bf-df69db07673e.png">
 
 # List of features
 
@@ -47,6 +48,7 @@ Below is our use case diagram
 
 
 # UML Robustness Diagram
+<img width="506" alt="Robustness diagram" src="https://user-images.githubusercontent.com/37887398/142621018-5a6e27b8-d16d-46dd-bd07-223f6607c952.png">
 
 # References
 Unhelkar, B. (2017) <i>Software Engineering with UML</i>. 1st edn. CRC Press. Available at: https://www.perlego.com/book/1554638/software-engineering-with-uml-pdf (Accessed: 25 September 2021).
