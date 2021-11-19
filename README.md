@@ -71,9 +71,6 @@ Below is our use case diagram
 | T6 | The user submits tranaction form with correct details | form should submit sucessfully | failed
 | T7 | The user submits form with the amount which meets her bank account |should tell the user they do not have enough to make this transaction | failed 
 
-# UML Class Diagram
-
-
 # UML Robustness Diagram
 <img width="506" alt="Robustness diagram" src="https://user-images.githubusercontent.com/37887398/142621018-5a6e27b8-d16d-46dd-bd07-223f6607c952.png">
 
