@@ -1,4 +1,4 @@
-solent\ac\uk\ood\examples\cardcheck\CardCompany.class
-solent\ac\uk\ood\examples\cardcheck\CalculateLunnDigit.class
-solent\ac\uk\ood\examples\cardcheck\CardValidationResult.class
-solent\ac\uk\ood\examples\cardcheck\RegexCardValidator.class
+solent/ac/uk/ood/examples/cardcheck/CardValidationResult.class
+solent/ac/uk/ood/examples/cardcheck/CardCompany.class
+solent/ac/uk/ood/examples/cardcheck/CalculateLunnDigit.class
+solent/ac/uk/ood/examples/cardcheck/RegexCardValidator.class

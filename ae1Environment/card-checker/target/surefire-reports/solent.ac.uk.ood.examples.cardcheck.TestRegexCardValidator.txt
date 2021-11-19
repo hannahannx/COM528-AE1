@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec

@@ -1,74 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" time="0" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" time="0.007" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.12+7-LTS"/>
-    <property name="sun.boot.library.path" value="C:\Users\dagbo\Downloads\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\dagbo\Java group\COM528-AE1\ae1Environment"/>
-    <property name="java.vm.vendor" value="Red Hat, Inc."/>
-    <property name="java.vendor.url" value="https://access.redhat.com/"/>
-    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="11.0.12+7"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/hannah-ann/COM528-AE1/ae1Environment"/>
+    <property name="java.vm.vendor" value="Eclipse Foundation"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.script" value=""/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="user.dir" value="C:\Users\dagbo\Java group\COM528-AE1\ae1Environment"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.dir" value="/Users/hannah-ann/COM528-AE1/ae1Environment"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.runtime.version" value="11.0.12+7-LTS"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\dagbo\AppData\Local\Temp\"/>
+    <property name="java.runtime.version" value="11.0.12+7"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/_f/wqvpy55s65v75xpwhk66lc9w0000gp/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\dagbo\Downloads\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\dagbo\Downloads\apache-maven-3.8.2-bin\apache-maven-3.8.2\bin;C:\Users\dagbo\Downloads\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\dagbo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\dagbo\AppData\Local\Programs\Python\Python39\;C:\Users\dagbo\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm 2021.2.1\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.1\bin;;C:\Users\dagbo\AppData\Roaming\npm;C:\Users\dagbo\AppData\Local\Programs\Microsoft VS Code\bin;."/>
-    <property name="maven.conf" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\../conf"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/hannah-ann/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\dagbo"/>
+    <property name="os.version" value="11.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven/lib/jansi-native"/>
+    <property name="user.home" value="/Users/hannah-ann"/>
     <property name="user.timezone" value="Europe/London"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="11"/>
-    <property name="java.class.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
-    <property name="user.name" value="dagbo"/>
+    <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="user.name" value="hannah-ann"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.4\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
-    <property name="java.home" value="C:\Users\dagbo\Downloads\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64\java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.12"/>
-    <property name="java.vendor" value="Red Hat, Inc."/>
-    <property name="maven.home" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\.."/>
-    <property name="file.separator" value="\"/>
+    <property name="java.vendor" value="Eclipse Foundation"/>
+    <property name="maven.home" value="/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2021-07-20"/>
-    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.vendor.version" value="18.9"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.vendor.version" value="Temurin-11.0.12+7"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardFailLhun" time="0"/>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardWrongString" time="0"/>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardDiners" time="0"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardFailLhun" time="0.002"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardWrongString" time="0.001"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardDiners" time="0.002"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardMastercard" time="0"/>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardJcb" time="0"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardJcb" time="0.002"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardAmex" time="0"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardVisa" time="0"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardDiscover" time="0"/>
