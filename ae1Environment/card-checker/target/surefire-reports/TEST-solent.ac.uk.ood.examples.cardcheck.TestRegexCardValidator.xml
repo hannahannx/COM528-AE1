@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" time="0.007" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" time="0.009" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+7"/>
@@ -46,7 +46,7 @@
     <property name="user.name" value="hannah-ann"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.5.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar --also-make --projects web-ui install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,12 +65,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardFailLhun" time="0.002"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardFailLhun" time="0.003"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardWrongString" time="0.001"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardDiners" time="0.002"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardMastercard" time="0"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardJcb" time="0.002"/>
-  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardAmex" time="0"/>
+  <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardAmex" time="0.001"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardVisa" time="0"/>
   <testcase classname="solent.ac.uk.ood.examples.cardcheck.TestRegexCardValidator" name="testCardDiscover" time="0"/>
 </testsuite>

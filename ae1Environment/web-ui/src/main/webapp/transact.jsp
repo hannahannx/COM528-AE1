@@ -48,7 +48,7 @@
         System.out.println((String) session.getAttribute("sessionPassword"));
     }
 
-    String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/rest/";
+    String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/index.html";
 
     BankRestClient client = new BankRestClientImpl(bankUrl);
 
