@@ -22,6 +22,7 @@ import org.apache.logging.log4j.LogManager;
 
 /**
  *
+ * 
  * @author Cristian Anton Frincu
  */
 public class PropertiesDao {
