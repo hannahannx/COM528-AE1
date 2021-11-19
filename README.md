@@ -45,20 +45,10 @@ Below is our use case diagram
 | User | The user enters in the infomation to transfer to another account | the users amount enters is subtracted from their account and put onto the account that it has been sent to
 | User | The user enters in their card details in order to request for the the refund| the form is submited to the admin page and waits for admin to approve before the refund is sent back to their card
 | user | the user enters in the credit card details but using the pin pan or keyboard provided | 
-
-
-
-
-| User | User enters their bank details one by one pressing green button on the keypad | User's bank details are being saved as an object ready to make a payment |
 | User | User presses Initiate Transaction button | The desired amount is being transferred into the payee's account |
-| User | User presses Refund Transaction button (optional) | Refund is being processed |
-| Admin | Admin enters logging details in the input fields | Admin logs into the account to configure the device |
-| Admin | Admin enters card details in the input fields and presses Change Card Details | Payee's card details is being saved in the properties file and it will be read on startup |
-| Admin | Admin enters user details and presses Change User Details | New admin details are being saved in a properties file |
-| Admin | Admin presses Logout or Go to Transaction Page button | New webpage appears ready to use for the user |
+| Admin | Admin enters log in details| logs into the account|
 
 # Test Plan
-| T2 | The user clicks the 'here' link | when clicked the link provided it should direct to the home page | passed
 
 | Test Number | Case | Expected Reaction | Outcome |
 | --- | --- | ----| --- |
