@@ -22,7 +22,7 @@ public class WebObjectFactory {
         synchronized (WebObjectFactory.class) {
             if (propertiesDao == null) {
                 // creates a single instance of the dao
-                String TEMP_DIR = System.getProperty("src/main/resources");
+                String TEMP_DIR = System.getProperty("user.dir");
      
                 File propertiesFile = new File(TEMP_DIR + "/config2.properties");
                 LOG.debug("using system temp directory: " + TEMP_DIR);

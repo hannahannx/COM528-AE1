@@ -2,6 +2,8 @@
  * 
  * The program will first look for the file properites and then it will take those
  * properties and save them in a file called "config2.properties"
+ * My failure that, the directory in which it saved the file is in appache tom/bin
+ * 
  */
 
 package properties;
