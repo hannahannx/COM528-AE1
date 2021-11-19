@@ -1,10 +1,12 @@
 /**
  * 
- * 
+ * The program will first look for the file properites and then it will take those
+ * properties and save them in a file called "config2.properties"
  */
 
 package properties;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -35,28 +37,24 @@ public class PropertiesDao {
  //Even with this change, line 97, the "getabsolutepath" also shows null, as my config file supposdely, is not created.
     public PropertiesDao(String propertiesFileLocation) {
         try {
-            File propertiesFile = new File("config.properties");
+            propertiesFile = new File(propertiesFileLocation);
+
             if (!propertiesFile.exists()) {
                 LOG.info("properties file does not exist: creating new file: " + propertiesFile.getAbsolutePath());
-               if( propertiesFile.getParentFile()!= null){
-                   propertiesFile.getParentFile().mkdirs();
-                   propertiesFile.createNewFile();
-                   saveProperties();
-               }
-               else{
-                   //give current project path and .mkdirs() to test the other methods
-                  propertiesFile = new File("resources\\config.properties");
-                   propertiesFile.mkdirs();
-                  propertiesFile.createNewFile();
-                 
-                  saveProperties();
-               }
-              }
+               // propertiesFile = new File(propertiesFileLocation);
+               
+                propertiesFile.getParentFile().mkdirs();
+                propertiesFile.createNewFile();
+                
+                saveProperties();
+               
+            }
+              
              loadProperties();
-            } 
-             catch (IOException ex) {
-                                        LOG.error("cannot load properties", ex);
+          } catch (IOException ex) {
+                              LOG.error("cannot load properties", ex);
                                     }
+            
     }
 
     // synchronized ensures changes are not made by another thread while reading
@@ -76,8 +74,14 @@ public class PropertiesDao {
 
             output = new FileOutputStream(propertiesFile);
             String comments = "# properties file";
+            
             properties.store(output, comments);
 
+            //Desktop desktop = Desktop.getDesktop();
+            //desktop.open(propertiesFile);
+            
+            //code above used to find the file, it will save it, but not in the project directory
+            
         } catch (IOException ex) {
             LOG.error("cannot save properties", ex);
         } finally {
@@ -112,6 +116,3 @@ public class PropertiesDao {
     
 }
 
-//Final note, it might be that either my imports don't work how they are supposed to
-// Or the file is either, never created or deleted as soon as it reaches this stage
-//I would have needed more time to figure this one out.

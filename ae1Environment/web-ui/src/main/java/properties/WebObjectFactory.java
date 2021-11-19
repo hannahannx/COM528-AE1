@@ -1,3 +1,8 @@
+/*
+The file can is saved, credentials are there, but the directory is which is saved
+is the appache tomcat, as it is the main directory that saves my file
+*/
+
 package properties;
 
 import java.io.File;
@@ -17,8 +22,9 @@ public class WebObjectFactory {
         synchronized (WebObjectFactory.class) {
             if (propertiesDao == null) {
                 // creates a single instance of the dao
-                String TEMP_DIR = System.getProperty("java.io.tmpdir");
-                File propertiesFile = new File(TEMP_DIR + "/config.properties");
+                String TEMP_DIR = System.getProperty("src/main/resources");
+     
+                File propertiesFile = new File(TEMP_DIR + "/config2.properties");
                 LOG.debug("using system temp directory: " + TEMP_DIR);
                 LOG.debug("using application properties file : " + propertiesFile.getAbsolutePath());
                 propertiesDao = new PropertiesDao(propertiesFile.getAbsolutePath());
