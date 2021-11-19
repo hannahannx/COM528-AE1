@@ -7,10 +7,10 @@ In this application we will create a web based point of sale application which a
 All members of our group were given specific tasks to complete such as web design and implemenation.
 | Hannah-Ann                              |   Cristian-Anton     |David | 
 | ----------------------------------------| ----------- | -----------
-| Setting up Project Plan                 |  Backend(transactions)           | Backend(admin log)
-| Use Cases and list of features                            |  Test plan          |
+| Setting up Project Plan                 |  Backend(transactions)           | Backend(TRANSACTIONS)
+| Use Cases and list of features                            |  Test plan          |Unit Tests 
 | UML Class Diagram.                      |  Javadoc       |
-| UML Robustness Diagram                  |  Unit Tests           |
+| UML Robustness Diagram                  |            |
 | Frontend (html, css, javascript and jsp)|             |
 | Markdown |                              |             |
 
